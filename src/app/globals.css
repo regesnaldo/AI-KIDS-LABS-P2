@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0A1A3A;
+  --foreground: #FFFFFF;
+  --primary: #00D4AA;
+  --primary-hover: #00B894;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Animações suaves */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+}
+
+.delay-400 {
+  animation-delay: 0.4s;
+}
+
+.delay-500 {
+  animation-delay: 0.5s;
+}
+
+/* Efeito de brilho nos botões */
+.btn-glow {
+  box-shadow: 0 0 20px rgba(0, 212, 170, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-glow:hover {
+  box-shadow: 0 0 30px rgba(0, 212, 170, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Gradiente de fundo sutil */
+.bg-gradient-tech {
+  background: linear-gradient(135deg, #0A1A3A 0%, #0D1E42 50%, #0A1A3A 100%);
+}
+
+/* Linha divisória glow */
+.divider-glow {
+  background: linear-gradient(90deg, transparent, rgba(0, 212, 170, 0.5), transparent);
+  height: 1px;
+}
