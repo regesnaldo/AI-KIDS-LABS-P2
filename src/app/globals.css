@@ -5,6 +5,8 @@
   --foreground: #FFFFFF;
   --primary: #00D4AA;
   --primary-hover: #00B894;
+  --accent: #A855F7;
+  --accent-2: #C084FC;
 }
 
 body {
@@ -74,7 +76,21 @@ body {
 
 /* Gradiente de fundo sutil */
 .bg-gradient-tech {
-  background: linear-gradient(135deg, #0A1A3A 0%, #0D1E42 50%, #0A1A3A 100%);
+  background:
+    radial-gradient(900px 500px at 50% 40%, rgba(168, 85, 247, 0.18), transparent 60%),
+    radial-gradient(700px 400px at 30% 20%, rgba(0, 212, 170, 0.12), transparent 60%),
+    linear-gradient(135deg, #050B1A 0%, #0A1A3A 45%, #070F24 100%);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.text-accent-gradient {
+  background: linear-gradient(180deg, var(--accent-2), var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 /* Linha divisória glow */
